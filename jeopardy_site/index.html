@@ -36,13 +36,48 @@
         <div class="section">
           <h2>Initial Findings</h2>
           <div class="divider"></div>
-          <p>First we just uploaded the data into a jupyter notebook and looked
-          through to see if there were any interesting patterns. We initally just
-          uploaded the jeopardy csv and checked out the data. There were 216,928
-          entries and 7 columns.</p>
+          <p>
+            First we just uploaded the data into a jupyter notebook and looked
+            through to see if there were any interesting patterns. We initally just
+            uploaded the jeopardy csv and checked out the data. There were 216,928
+            entries and 7 columns.
+          </p>
           <script src="https://gist.github.com/aurbanski/3fa96f61b10ab0888baefc96b55b77b1.js"></script>
+          <h4>Insights</h4>
+          <p>
+            After checking out the initial format of the data, we started going into
+            the data to see if we could find patterns. We checked into the answer and
+            category columns to see what the most common answers and categories were.
+          </p>
+          <script src="https://gist.github.com/aurbanski/1500bf1e2dd6ea9a3a2781f322245ee7.js"></script>
+          <h4>Answers</h4>
+          <p>
+            What we found was that the most common answers are China and Australia but
+            all of the top 10 most common answers are geographic locations.
+          </p>
+          <div class="row">
+            <div class="col s12">
+              <div class="card-panel">
+                <canvas id="chart1"></canvas>
+              </div>
+            </div>
+          </div>
+          <h4>Categories</h4>
+          <p>
+            We also found the most common categories that are used on Jeopardy. A lot of
+            the most common categories were academic fields like Science, Literature,
+            and American History.
+          </p>
+          <div class="row">
+            <div class="col s12">
+              <div class="card-panel">
+                <canvas id="chart2"></canvas>
+              </div>
+            </div>
+          </div>
         </div>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
     <script type="text/javascript" src="./index.js"></script>
   </body>
