@@ -11,9 +11,8 @@
       <div class="nav-wrapper deep-purple lighten-3">
         <a href="#" class="brand-logo">&nbsp; Jeopardy</a>
         <ul id="nav-mobile" class="right hide-on-med-and-down">
-          <li><a href="#">Sass</a></li>
-          <li><a href="#">Components</a></li>
-          <li><a href="#">JavaScript</a></li>
+          <li><a href="#findings">Initial Findings</a></li>
+          <li><a href="#model">Building Model</a></li>
         </ul>
       </div>
     </nav>
@@ -36,7 +35,7 @@
         </p>
         </div>
         <div class="section">
-          <h2>Initial Findings</h2>
+          <h2 id="findings">Initial Findings</h2>
           <div class="divider"></div>
           <p>
             First we just uploaded the data into a jupyter notebook and looked
@@ -77,6 +76,22 @@
               </div>
             </div>
           </div>
+        </div>
+        <div class="section">
+          <h2 id="model">Building a Model</h2>
+          <div class="divider"></div>
+          <p>
+            Initially we tried to build a model using a bag of words approach
+            with sklearn. We tried to get the word count for the questions and
+            then predict the prize value. We used a Naive Bayes classification
+            first and that had about 19% accuracy which isn't very good. Then
+            we decided to try to fit a Support Vector Machine Classification
+            classification and the accuracy actually decreased to about 14%.
+          </p>
+          <script src="https://gist.github.com/aurbanski/c6f60e5a3389487381b927553bb46fd3.js"></script>
+          <p>
+            One of the problems with this approach was that
+          </p>
         </div>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
