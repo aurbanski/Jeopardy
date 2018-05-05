@@ -37,3 +37,23 @@ var chart2 = new Chart(ctx2, {
     // Configuration options go here
     options: {}
 });
+
+var ctx3 = document.getElementById('chart3').getContext('2d');
+var chart3 = new Chart(ctx3, {
+                       type: 'line',
+                       data: {
+                       labels: ["Naive Bayes", "SVM", "Subsampled Bayes"],
+                       datasets: [{
+                                  label: "Percent Accuracy",
+                                  backgroundColor: 'rgb(221,209,231)',
+                                  borderColor: 'rgb(136,94,173)',
+                                  data: [19, 14, 51],
+                                  }]
+                       },
+                       
+                       // Configuration options go here
+                       options: {}
+});
+
+
+

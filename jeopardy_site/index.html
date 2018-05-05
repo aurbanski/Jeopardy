@@ -51,6 +51,10 @@
             category columns to see what the most common answers and categories were.
           </p>
           <script src="https://gist.github.com/aurbanski/1500bf1e2dd6ea9a3a2781f322245ee7.js"></script>
+          <p>
+          For fun, here's a word cloud of the most common categories
+          </p>
+          <img src="commoncat.png" class="responsive-img center">
           <h4>Answers</h4>
           <p>
             What we found was that the most common answers are China and Australia but
@@ -106,6 +110,23 @@
             again and we got an accuracy of 50%.
           </p>
           <script src="https://gist.github.com/aurbanski/97c5c11a1247f382b60ce5cace339c56.js"></script>
+          <h4>Model Progress</h4>
+          <div class="row">
+              <div class="col s12">
+                  <div class="card-panel">
+                      <canvas id="chart3"></canvas>
+                  </div>
+              </div>
+          </div>
+          
+          <h4>Issue</h4>
+          <p>
+          After this, we tried to find ways to improve our model, but made an interesting discovery. The reason the model performed so well in this date range was that for some reason in this date range there was only two values that appeared very frequently. So the model would just pick one of these and was 50% accurate. Below are the graphs of the value frequencies for the whole data set (left), and the subset we used (right).
+          </p>
+          <div class="row">
+          <div class="col s6"><img src="graphwholething.png" width=100%></div>
+          <div class="col s6"><img src="graphsubset.png" width=100%></div>
+          </div>
         </div>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
